@@ -10,7 +10,7 @@ class JSONPRenderer(JSONRenderer):
         Given an obj, if callback is presented in GET params, return in JSONP
         ;otherwise, return in JSON
         """
-        params = self.view.PARAMS
+        params = self.view.request.GET.copy()
         json_return = super(JSONPRenderer,self).render(obj,media_type)
         if params.get('callback'):
             callback = params.get('callback')

@@ -6,14 +6,14 @@ def read(fname):
 
 setup(
     name = "djangorestframework_jsonp",
-    version = "0.1",
+    version = "0.2",
     author = "Proteus Technologies",
     author_email = "devs@proteus-tech.com",
     description = ("JSONP Response Renderer, extension for Django REST Framework Library"),
     long_description = read('README.markdown'),
     keywords = "djangorestframework jsonp",
     classifiers = [
-        "Development Status :: 1 - Alpha",
+        "Development Status :: 2 - Alpha",
         "Intended Audience :: DevOps",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
